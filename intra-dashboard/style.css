@@ -144,10 +144,11 @@ hr{ border:none; border-bottom:1px dashed #ebebeb;}
 .cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {display: block; -webkit-transition: all 0.5s ease;	-moz-transition: all 0.5s ease;	transition: all 0.5s ease; }
 
 /*----- header ------------*/
-.header{ width:100%; height:auto; background:#ffffff; position:fixed; -webkit-box-shadow:0px 1px 4px 0px rgba(0,0,0,0.06);  
-	 -moz-box-shadow:0px 1px 4px 0px rgba(0,0,0,0.06); 
-	 box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.06); z-index:999;}
-.logoSpace{ width:186px; height:35px; margin:0 auto; padding-top:10px;}
+.header{ width:100%; height:auto; background:#ffffff; position:fixed; -webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.1);  
+	 -moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.1); 
+	 box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1); z-index:999;}
+.logoSpace{ width:186px; height:35px; margin:0 auto; padding-top:15px; text-align: center;}
+.logoSpace img{ width: 85%; height: auto;}
 .myAccount{ float:right; font-size:0.8em; line-height:1em; padding:12px 40px 13px 20px; }
 .avatar{ font-size:2.6em; margin-right:15px;}
 .myAccount .agent{ font-weight:600; display:block; font-size:1em; line-height:1.2em; margin-bottom:5px;}
