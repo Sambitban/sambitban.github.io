@@ -147,7 +147,7 @@ hr{ border:none; border-bottom:1px dashed #ebebeb;}
 .header{ width:100%; height:auto; background:#ffffff; position:fixed; -webkit-box-shadow:0px 1px 4px 0px rgba(0,0,0,0.06);  
 	 -moz-box-shadow:0px 1px 4px 0px rgba(0,0,0,0.06); 
 	 box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.06); z-index:999;}
-.logoSpace{ width:196px; height:41px; margin:0 auto; padding-top:10px;}
+.logoSpace{ width:186px; height:35px; margin:0 auto; padding-top:10px;}
 .myAccount{ float:right; font-size:0.8em; line-height:1em; padding:12px 40px 13px 20px; }
 .avatar{ font-size:2.6em; margin-right:15px;}
 .myAccount .agent{ font-weight:600; display:block; font-size:1em; line-height:1.2em; margin-bottom:5px;}
