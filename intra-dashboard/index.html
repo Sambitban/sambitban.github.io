@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<title>Wipro Intra</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/classie.js"></script>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<!-------------------------- Slide Menu ------------------>
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+
+<ul class="cd-accordion-menu">
+<li><a id="now" href="dash.html" target="action"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wipro" target="action" ><i class="fa fa-address-book-o" aria-hidden="true"></i> SAP Master Calls</a></li>
+<li class="has-children">
+<input type="checkbox" name ="sub-group-3" id="sub-group-3">
+<label for="sub-group-3"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Request for Reports</label>
+                
+                <ul>
+					<li><a href="http://www.wiprolighting.com/inter" target="action" >Sales</a></li>
+					<li><a href="#">Stock</a></li>
+				</ul>
+</li>
+<li class="has-children">
+<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+<label for="sub-group-1"><i class="fa fa-line-chart" aria-hidden="true"></i>Reports</label>
+                
+                <ul>
+					<li><a href="#">SAP National Reports</a></li>
+					<li><a href="#">SAP Regional Reports</a></li>
+					<li><a href="#">Yardley SAP Reports</a></li>
+                    <li><a href="#">Furniture Reports</a></li>
+                    <li><a href="#">Fact Sheet</a></li>
+                    <li><a href="#">Saturday Uploading</a></li>
+				</ul>
+                
+</li>
+<li><a href="#"><img src="img/furniture.png" />Furniture</a></li>
+<li><a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i> CTrack-C&I</a></li>
+<li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i> Mission Quality</a></li>
+<li><a href="#"><img src="img/excel.png" /> Excel Macros</a></li>
+<li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Directory</a></li>
+<li><a href="#"><i class="fa fa-car" aria-hidden="true"></i> CAR Portal</a></li>
+<li class="has-children">
+<input type="checkbox" name ="sub-group-2" id="sub-group-2">
+<label for="sub-group-2"><i class="fa fa-universal-access" aria-hidden="true"></i> C R M</label>
+                
+                <ul>
+					<li><a href="#">CC - CRM</a></li>
+					<li><a href="#">CC&amp;I - CRM</a></li>
+                    <li><a href="#">Furniture CRM</a></li>
+				</ul>
+</li>
+<li><a href="#"><i class="fa fa-life-ring fa-fw" aria-hidden="true"></i> IT HelpDesk</a></li>
+<li><a href="#"><i class="fa fa-university" aria-hidden="true"></i> C n I E-GuruKool</a></li>
+<li><a href="#"><i class="fa fa-window-maximize" aria-hidden="true"></i> WEPL ppt slides</a></li>
+</ul>
+   
+</nav>  
+
+<!-------------------------- Header ------------------>
+<div class="header">
+	
+    <div class="pushNavMenuButton">
+    <input type="checkbox" id="showLeftPush" role="button" class="read">
+	<label for="showLeftPush"><span><i class="fa fa-bars" aria-hidden="true"></i></span><span><i class="fa fa-times" aria-hidden="true"></i></span></label>
+    </div>
+
+<div class="myAccount">
+<div class="left avatar"><img src="img/user.png" /></div>
+<div class="right">
+<span class="agent">Robert Smith</span>
+<a href="#"></a>
+<div tabindex="0" class="onclick-menu">
+<i class="fa fa-caret-down" aria-hidden="true"></i>
+    <ul class="onclick-menu-content">
+        <li><button><a href="#">My T-codes</a></button></li>
+        <li><button><a href="#">My Task</a></button></li>
+        <li><button><a href="#">IT COMPLIANCE</a></button></li>
+        <li><button><a href="#">My Details</a></button></li>
+        <li><button><a href="#">My Asset</a></button></li>
+        <li><button><a href="#">Know My ADId</a></button></li>
+    </ul>
+</div>
+</div>
+</div>
+
+<!--<div class="noteMenu"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="updates">3</span></a></li></div>
+-->
+<div class="logoSpace"><img src="img/logo.png" /></div>
+
+<div class="clear"></div>
+</div>
+
+<div class="blank"></div>
+
+<!--------------- Application Loader -------------->
+
+<div id="appload" class="appScreen">
+     <iframe name="action" title="Cuneiform" frameborder="0"></iframe>
+<!--<div class="message">Application will Run here.</div>-->
+</div>
+
+
+<!------------- loading dashboard on Page Load ---------------------->
+
+<script>
+
+window.onload=function(){
+ if(document.getElementById('test')!=null||document.getElementById('now')!=""){ 
+ document.getElementById('now').click();
+ }
+}
+
+</script>
+
+<!------------- Slide Menu JS ---------------------->
+
+
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+        
+
+
+</body>
+</html>
