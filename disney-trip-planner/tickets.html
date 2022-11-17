@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDW Trip Planner</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<!----********************* NavBar *********************--->
+
+<div class="navbar">
+<div class="wrapper">
+
+	<div class="logo"><a href="#"><img src="img/logo.png" alt="WDW" /></a></div>
+	<div class="topSearch"><i class="fa fa-search"></i></div>
+	<div class="rightNav">
+		<ul>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Get a Quote</a></li>
+		</ul>
+	</div>
+
+	<div class="midNav">
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Podcasts</a></li>
+		<li><a href="#">Ebook</a></li>
+		</ul>
+	</div>
+
+	<div class="mobileMenu"><i class="fa fa-bars"></i></div>
+
+	<div class="clear"></div>
+
+</div>
+</div> <!---- NavBar END !! ---->
+
+
+
+<!---******************* Steps **********************--->
+
+<div class="step-yellow">
+<div class="wrapper">
+	<ul>
+		<li><a href="login.html"><span class="login loginAct">&nbsp;</span>Login</a></li>
+		<li><a href="about.html"><span class="about aboutAct">&nbsp;</span>About</a></li>
+		<li><a href="dates.html"><span class="date dateAct">&nbsp;</span>Dates</a></li>
+		<li><a href="resort.html"><span class="resort resortAct">&nbsp;</span>Resort</a></li>
+		<li><a href="dailyplan.html"><span class="dailyplan dailyplanAct">&nbsp;</span>Daily Plan</a></li>
+		<li><a href="tickets.html"><span class="ticket ticketOn">&nbsp;</span>Tickets</a></li>
+		<li><a href="dinning.html"><span class="dinning">&nbsp;</span>Dinning</a></li>
+		<li><a href="touring.html"><span class="touring">&nbsp;</span>Touring</a></li>
+		<li><a href="extras.html"><span class="extra">&nbsp;</span>Extras</a></li>
+		<li><a href="summery.html"><span class="summary">&nbsp;</span>Summery</a></li>
+		<li><a href="forum.html"><span class="forum">&nbsp;</span>Forum</a></li>
+		<div class="clear"></div>
+	</ul>
+
+</div>
+</div><!--- Steps END !! --->
+
+
+<div class="CostCalc">
+<h1>Estimated trip cost so far:* <span class="totalCostCal">$1703.88</span></h1>
+<p>*Only an estimate, doesn't include any discounts.</p>
+</div>
+
+
+
+
+<!---******************* Tickets page **********************--->
+
+
+<!--- Welcome Text with Toggle Section --->
+
+<div class="wrapper">
+	<div class="welcomeText">
+    <h1>Select Park Tickets</h1>
+    <p class="blurb">Now that you have your daily plans, you know how many days you'll be in the parks and can get an idea of which park tickets to buy. There are several ticket options. Here's a description of your choices:</p>
+	</div>
+</div>
+
+<!--- Main Page Content --->
+
+<div class="wrapper">
+<div class="pageContent">
+
+<!--- Filters --->
+	<div class="wdw1o4">
+    <div class="searchFilters">
+	<h3>Disney Ticket Discount Search:</h3>
+    <hr/>
+ 		
+        <p>How Many Adults? (Ages 10+)</p>
+        <select class="wdwfull" id="selectmenu">
+			<option>Slower</option>
+			<option>Slow</option>
+			<option selected="selected">0 Adults</option>
+			<option>Fast</option>
+			<option>Faster</option>
+		</select>
+
+        <p>How Many Children? (Ages 3-9)</p>
+        <select class="wdwfull" id="selectmenu2">
+			<option>Slower</option>
+			<option>Slow</option>
+			<option selected="selected">0 Childrens</option>
+			<option>Fast</option>
+			<option>Faster</option>
+		</select>
+
+        <p>How Many Days In The Parks? (not including water parks)</p>
+         <select class="wdwfull" id="selectmenu3">
+			<option>Slower</option>
+			<option>Slow</option>
+			<option selected="selected">4 days</option>
+			<option>Fast</option>
+			<option>Faster</option>
+		</select>
+
+        <p>How Many Days In The Parks? (not including water parks)</p>
+        
+	    <div class="wdw1o4"><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0" checked="checked" /> Yes</label></div>
+	    <div class="wdw1o4"><label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1" /> No</label></div>
+        <div class="clear"></div>
+        
+        <div class="iconBtnRed">CALCULATE</div>
+        <div class="clear"></div>
+            
+      </div>
+    </div>
+
+<!--- Search Result --->
+	<div class="wdw3o4">
+    <div class="searchResult">
+    
+     <div class="choiceTagArea">
+    <h2>You’ve selected the package:</h2>
+    <div class="choiceTags">4 Day Child Ticket w/Park Hop option &nbsp; <i class="fa fa-times"></i></div>
+    </div>
+    
+    <h3>Showing search Results</h3>
+    
+    	<div class="ticketThumb">
+        
+    		<div class="wdw3o4">
+            	<h1>Park Ticket</h1>
+    			<h2><i class="fa fa-ticket"></i>&nbsp; 4 Day Child Ticket w/Park Hop option</h2>
+                <p class="ticktPrice">$346.68 each at ParkSavers.com.</p>
+                <hr/>
+                <h2><i class="fa fa-ticket"></i>&nbsp; 5 Day Adult Ticket w/Park Hop option</h2>
+				<p class="ticktPrice">$367 each at ParkSavers.com.</p>
+				<p>Instructions for linking these vouchers to My Disney Experience/Fastpass+</p>
+                <p><strong>Delivery method:</strong> Mail</p>
+				<p><a href="#">More Details</a></p>
+    		</div>
+            
+    		<div class="wdw1o4">
+    			<div class="ticketPrice"><strong>Total Cost:</strong><br/>Less than<br/><span class="bigTicketPrice">$3915.08</span></div>
+                <div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div>
+    		</div>
+            
+    		<div class="clear"></div>
+    	</div>
+        
+        
+        <div class="ticketThumb">
+        
+    		<div class="wdw3o4">
+    			<h1><i class="fa fa-ticket"></i> 4 Day Child Ticket w/Park Hop option</h1>
+				<p>$346.68 each at ParkSavers.com. Instructions for linking these vouchers to My Disney Experience/Fastpass+</p>
+    		</div>
+            
+    		<div class="wdw1o4">
+    			<div class="ticketPrice"><strong>Total Cost:</strong><br/>Less than<br/><span class="bigTicketPrice">$3915.08</span></div>
+                <div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div>
+    		</div>
+            
+    		<div class="clear"></div>
+    	</div>
+        
+        
+        <div class="ticketThumb">
+        
+    		<div class="wdw3o4">
+    			<h1><i class="fa fa-ticket"></i> 4 Day Child Ticket w/Park Hop option</h1>
+				<p>$346.68 each at ParkSavers.com. Instructions for linking these vouchers to My Disney Experience/Fastpass+</p>
+    		</div>
+            
+    		<div class="wdw1o4">
+    			<div class="ticketPrice"><strong>Total Cost:</strong><br/><span class="bigTicketPrice">$4999.08</span></div>
+                <div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div>
+    		</div>
+            
+    		<div class="clear"></div>
+    	</div>
+        
+    
+
+    </div>
+    </div>
+    
+<div class="clear"></div>
+
+<hr/>
+<div class="RedButton"><a href="#">Save All Tickets</a></div>
+
+</div>
+</div>
+
+
+
+
+
+<!----------- Footer -------------------->
+
+<div class="footer">
+<div class="wrapper">
+<p class="copyright">&copy; 2015 WDWPrepSchool.com</p>
+<p>WDWPrepSchool.com is not affiliated with, authorized or endorsed by, or in any way officially connected with, The Walt Disney Company</p>
+</div>
+</div>
+
+<!----------- Footer END !! ----->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+$( "#slider1" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+$( "#selectmenu2" ).selectmenu();
+$( "#selectmenu3" ).selectmenu();
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDW Trip Planner</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<!----********************* NavBar *********************--->
+
+<div class="navbar">
+<div class="wrapper">
+
+	<div class="logo"><a href="#"><img src="img/logo.png" alt="WDW" /></a></div>
+	<div class="topSearch"><i class="fa fa-search"></i></div>
+	<div class="rightNav">
+		<ul>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Get a Quote</a></li>
+		</ul>
+	</div>
+
+	<div class="midNav">
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Podcasts</a></li>
+		<li><a href="#">Ebook</a></li>
+		</ul>
+	</div>
+
+	<div class="mobileMenu"><i class="fa fa-bars"></i></div>
+
+	<div class="clear"></div>
+
+</div>
+</div> <!---- NavBar END !! ---->
+
+
+
+<!---******************* Steps **********************--->
+
+<div class="step-yellow">
+<div class="wrapper">
+	<ul>
+		<li><a href="login.html"><span class="login loginAct">&nbsp;</span>Login</a></li>
+		<li><a href="about.html"><span class="about aboutAct">&nbsp;</span>About</a></li>
+		<li><a href="dates.html"><span class="date dateAct">&nbsp;</span>Dates</a></li>
+		<li><a href="resort.html"><span class="resort resortOn">&nbsp;</span>Resort</a></li>
+		<li><a href="dailyplan.html"><span class="dailyplan">&nbsp;</span>Daily Plan</a></li>
+		<li><a href="tickets.html"><span class="ticket">&nbsp;</span>Tickets</a></li>
+		<li><a href="dinning.html"><span class="dinning">&nbsp;</span>Dinning</a></li>
+		<li><a href="touring.html"><span class="touring">&nbsp;</span>Touring</a></li>
+		<li><a href="extras.html"><span class="extra">&nbsp;</span>Extras</a></li>
+		<li><a href="summery.html"><span class="summary">&nbsp;</span>Summery</a></li>
+		<li><a href="forum.html"><span class="forum">&nbsp;</span>Forum</a></li>
+		<div class="clear"></div>
+	</ul>
+
+</div>
+</div><!--- Steps END !! --->
+
+
+<div class="CostCalc">
+<h1>Estimated trip cost so far:* <span class="totalCostCal">$1703.88</span></h1>
+<p>*Only an estimate, doesn't include any discounts.</p>
+</div>
+
+
+
+<!---******************* Resort page **********************--->
+
+
+<!--- Welcome Text with Toggle Section --->
+
+<div class="wrapper">
+	<div class="welcomeText">
+    <h1>Select Resort</h1>
+    <p class="blurb">There are lots of accommodations to choose from for your Disney World trip. Let's break it down into the 2 main categories: off-site and on-site.</p>
+    <article>
+<input type="checkbox" id="read_more" role="button" class="read">
+<label for="read_more" onclick=""><span>Read More &nbsp;<i class="fa fa-angle-down"></i></span><span>Hide This &nbsp;<i class="fa fa-angle-up"></i></span></label>
+<section>
+<div class="wdw1o2">
+<div class="boxSpace">
+<h3>On-site accommodations.</h3>
+<p>Disney has a couple dozen resorts on site in various price categories called Value Resorts. Moderate Resorts and Deluxe Resorts. There is also a campground called Ft. Wilderness which has cabins, campsites and RV hookups.
+People staying on site at Disney World get extra perks such as:</p>
+<ul>
+<li>Free bus transportation (called Magical Express) between the airport and hotel</li>
+<li>Early/late entry at parks on select days (these are called Extra Magic Hours)</li>
+<li>Being able to make FastPass+ reservations up to 60 days beforehand (more info on that later)</li>
+<li>The ability to use the Disney Dining Plan (more about that in the dining section)</li>
+<li>Room charge privileges at any on-site merchant</li>
+<li>Being able to send purchases back to the hotel room to avoid carrying them around all day</li>
+</ul>
+</div>
+</div>
+<div class="wdw1o2">
+<div class="boxSpace">
+<h3>Off-site accommodations.</h3>
+<p>There are even more options for staying off site during a Disney World trip. Many/most of the off-site options will get you more square footage for less money, making it a great option for people who want more space.</p>
+<p>The downside is that off-site guests lose out on the benefits listed above for on-site guests, there's a daily parking fee and shuttles to the parks may not operate on a convenient schedule. </p>
+</div>
+</div>
+<div class="clear"></div>
+
+<h2>Where should you stay?</h2>
+<p>Use the tool below to filter based on your interests.</p>
+
+
+<h2>Recommendations for you</h2>
+<p>Based on your interests and the people in your group, these are some options I'd recommend:</p>
+<ul>
+<li>Art of Animation</li>
+<li>Port Orleans Riverside</li>
+<li>The Polynesian Resort </li>
+</ul>
+</section>
+</article>
+</div>
+</div>
+
+<!--- Main Page Content --->
+
+<div class="wrapper">
+<div class="pageContent">
+
+<!--- Filters --->
+	<div class="wdw1o4">
+    <div class="searchFilters">
+	<h3>Adjust the sliders and options to see which resorts are best for you</h3>
+    <hr/>
+ 		
+        <p>Search Resorts:</p>
+        <input id="autocomplete" title="type &quot;a&quot;">
+        <br/><br/>
+        <hr/>
+        
+		<p>Select Category:</p>
+        <select class="wdwfull" id="selectmenu">
+			<option>Slower</option>
+			<option>Slow</option>
+			<option selected="selected">All Category</option>
+			<option>Fast</option>
+			<option>Faster</option>
+		</select>
+
+        <p>Select Location:</p>
+        <select class="wdwfull" id="selectmenu2">
+			<option>Slower</option>
+			<option>Slow</option>
+			<option selected="selected">All Location</option>
+			<option>Fast</option>
+			<option>Faster</option>
+		</select>
+
+        <p>Select Onsite/Offsite:</p>
+         <select class="wdwfull" id="selectmenu3">
+			<option>Slower</option>
+			<option>Slow</option>
+			<option selected="selected">Onsite and Offsite</option>
+			<option>Fast</option>
+			<option>Faster</option>
+		</select>
+        
+        
+
+        <p>Select Your Budget:</p>
+        <div class="range" id="slider"></div>
+        <div class="leftMark">Low</div>
+        <div class="midMark">23456</div>
+        <div class="rightMark">High</div>
+        <div class="clear"></div>
+        
+        <p>Maximum people per Room:</p>
+        <div class="range" id="slider1"></div>
+        <div class="leftMark">Low</div>
+        <div class="midMark">6</div>
+        <div class="rightMark">High</div>
+        <div class="clear"></div>
+        
+	</div>
+    </div>
+
+<!--- Search Result --->
+	<div class="wdw3o4">
+    <div class="searchResult">
+
+    <div class="choiceTagArea">
+    <h2>You’ve selected the package:</h2>
+    <div class="choiceTags"> Standard Room in All-Star Music -  $110.57 / night &nbsp; <i class="fa fa-times"></i></div>
+    </div>
+    
+    <h3>Showing search Results</h3>
+    
+    <div class="resortThumb">
+
+    	<div class="wdw3o4">
+	
+    		<h1>All-Star Movies </h1>
+    		<ul>
+    		<li><span class="site">Onsite</span></li>
+    		<li><i class="fa fa-users"></i>&nbsp; Capacity : 5 People</li>
+    		<li><i class="fa fa-building"></i>&nbsp; Resort Category : Value</li>
+    		</ul>
+    
+    		<p><strong>Pros:</strong> Affordable, fun theming especially suited for young kids</p>
+			<p><strong>Cons:</strong> Small rooms, spread out, shared buses between All-Star resorts</p>
+            
+            <p class="warningNote">Maintanance is scheduled on 26th Sept 2015.</p>
+    
+    	</div>
+    
+    	<div class="wdw1o4"><img src="images/All-Stars1.jpg" /></div>
+    
+        <hr/>
+        <h2>List of Available Resorts</h2>
+
+        <ul class="resortlist">
+        <li class="fav"><p><span class="roomName">Standard Room</span><br/>No. of people: 6 <br/> Bed Size: Double <br/> <strong>Average price: $110.57/night</strong></p> <div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div></li>
+        <li><p><span class="roomName">Preferred Room</span><br/>No. of people: 6 <br/> Bed Size: Double <br/> <strong>Average price: $110.57/night</strong></p> <div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div></li>
+        <div class="clear"></div>
+        </ul>
+        
+        <hr/>
+        
+        <img class="map" src="images/allstarmoviesmapmembers.png"/>
+    
+    </div>
+    
+    <div class="resortThumb">
+
+    	<div class="wdw3o4">
+	
+    		<h1>All-Star Music </h1>
+    		<ul>
+    		<li><span class="site">Onsite</span></li>
+    		<li><i class="fa fa-users"></i>&nbsp; Capacity : 5 People</li>
+    		<li><i class="fa fa-building"></i>&nbsp; Resort Category : Value</li>
+    		</ul>
+    
+    		<p><strong>Pros:</strong> Affordable, fun theming especially suited for young kids</p>
+			<p><strong>Cons:</strong> Small rooms, spread out, shared buses between All-Star resorts</p>
+    
+    	</div>
+    
+    	<div class="wdw1o4"><img src="images/All-star-music.jpg" /></div>
+    
+        <hr/>
+        <h2>List of Available Resorts</h2>
+
+        <ul class="resortlist">
+        <li><p><span class="roomName">Standard Room</span><br/>No. of people: 6 <br/> Bed Size: Double <br/> <strong>Average price: $110.57/night</strong></p> <div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div></li>
+        <li><p><span class="roomName">Preferred Room</span><br/>No. of people: 6 <br/> Bed Size: Double <br/> <strong>Average price: $110.57/night</strong></p><div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div></li>
+        <li><p><span class="roomName">Family Suite</span><br/>No. of people: 6 <br/> Bed Size: Double <br/> <strong>Average price: $110.57/night</strong></p> <div class="iconBtnRed">Select &nbsp;<i class="fa fa-arrow-circle-right"></i></div></li>
+        <div class="clear"></div>
+        </ul>
+        
+        <hr/>
+        
+        <img class="map" src="images/allstarmusicmapmembers.png"/>
+    
+    </div>
+    
+    
+    
+    <div class="resortThumb"></div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    
+<div class="clear"></div>
+
+<hr/>
+<div class="RedButton"><a href="#">Save My Resort</a></div>
+
+</div>
+</div>
+
+
+
+
+
+<!----------- Footer -------------------->
+
+<div class="footer">
+<div class="wrapper">
+<p class="copyright">&copy; 2015 WDWPrepSchool.com</p>
+<p>WDWPrepSchool.com is not affiliated with, authorized or endorsed by, or in any way officially connected with, The Walt Disney Company</p>
+</div>
+</div>
+
+<!----------- Footer END !! ----->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+$( "#slider1" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+$( "#selectmenu2" ).selectmenu();
+$( "#selectmenu3" ).selectmenu();
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>

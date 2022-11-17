@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDW Trip Planner</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<!----********************* NavBar *********************--->
+
+<div class="navbar">
+<div class="wrapper">
+
+	<div class="logo"><a href="#"><img src="img/logo.png" alt="WDW" /></a></div>
+	<div class="topSearch"><i class="fa fa-search"></i></div>
+	<div class="rightNav">
+		<ul>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Get a Quote</a></li>
+		</ul>
+	</div>
+
+	<div class="midNav">
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Podcasts</a></li>
+		<li><a href="#">Ebook</a></li>
+		</ul>
+	</div>
+
+	<div class="mobileMenu"><i class="fa fa-bars"></i></div>
+
+	<div class="clear"></div>
+
+</div>
+</div> <!---- NavBar END !! ---->
+
+
+
+<!---******************* Steps **********************--->
+
+<div class="step-yellow">
+<div class="wrapper">
+	<ul>
+		<li><a href="login.html"><span class="login loginAct">&nbsp;</span>Login</a></li>
+		<li><a href="about.html"><span class="about aboutOn">&nbsp;</span>About</a></li>
+		<li><a href="dates.html"><span class="date">&nbsp;</span>Dates</a></li>
+		<li><a href="resort.html"><span class="resort">&nbsp;</span>Resort</a></li>
+		<li><a href="dailyplan.html"><span class="dailyplan">&nbsp;</span>Daily Plan</a></li>
+		<li><a href="tickets.html"><span class="ticket">&nbsp;</span>Tickets</a></li>
+		<li><a href="dinning.html"><span class="dinning">&nbsp;</span>Dinning</a></li>
+		<li><a href="touring.html"><span class="touring">&nbsp;</span>Touring</a></li>
+		<li><a href="extras.html"><span class="extra">&nbsp;</span>Extras</a></li>
+		<li><a href="summery.html"><span class="summary">&nbsp;</span>Summery</a></li>
+		<li><a href="forum.html"><span class="forum">&nbsp;</span>Forum</a></li>
+		<div class="clear"></div>
+	</ul>
+
+</div>
+</div><!--- Steps END !! --->
+
+<!---******************* About page **********************--->
+
+
+<div class="CostCalc">
+<h1>Estimated trip cost so far:* <span class="totalCostCal">$0</span></h1>
+<p>*Only an estimate, doesn't include any discounts.</p>
+</div>
+
+
+
+<div class="wrapper">
+
+<ul class="contentTabs">
+
+    <li class="labels">
+        <label for="tab1" id="label1">My Saved Trip Plans</label>
+        <label for="tab2" id="label2"><i class="fa fa-plus-circle"></i>&nbsp; Add a New Trip</label>
+    </li>
+	
+<!---- My Saved Trips ---->    
+    
+    <li>
+        <input type="radio" checked name="tabs" id="tab1">
+        <div id="tab-content1" class="tab-content">
+        
+        	<div class="noteWarning">You’ve reached the maximum number of trip plans. Delete 1 of your plans if you’d like to create a new plan!!</div>
+
+			<ul class="wdwlist">
+
+             <li>
+             	<div class="iconBtn"><i class="fa fa-pencil"></i> Edit</div>
+        		<div class="iconBtn"><i class="fa fa-trash-o"></i> Delete</div>
+        		<h2>Shannon and Blake Spring Break 2015</h2>
+                <p>Estimated trip cost :* $1703.88</p>
+        		<div class="clear"></div>
+        	</li>
+
+            <li>
+            	<div class="iconBtn"><i class="fa fa-pencil"></i> Edit</div>
+        		<div class="iconBtn"><i class="fa fa-trash-o"></i> Delete</div>
+        		<h2>September Fall & Wine trip</h2>
+        		<p>Estimated trip cost :* $2303.88</p>
+        		<div class="clear"></div>
+        	</li>
+ 
+            <li>
+                <div class="iconBtn"><i class="fa fa-pencil"></i> Edit</div>
+        		<div class="iconBtn"><i class="fa fa-trash-o"></i> Delete</div>
+        		<h2>Demo Plan</h2>
+        		<div class="clear"></div>
+        	</li>
+
+            <li>
+                <div class="iconBtn"><i class="fa fa-pencil"></i> Edit</div>
+        		<div class="iconBtn"><i class="fa fa-trash-o"></i> Delete</div>
+        		<h2>Another Demo Plan for UI Testing</h2>
+        		<div class="clear"></div>
+        	</li>
+            
+        	</ul>
+        </div>
+	</li>
+
+<!---- Add New Trips ---->
+
+   		<li>
+        <input type="radio" name="tabs" id="tab2">
+        <div id="tab-content2" class="tab-content">
+
+	          <div class="addNewTrip">
+	          <h1>Start a Plan</h1>
+	          <p>Vestibulum fermentum risus laoreet augue egestas sagittis. Nullam vitae metus sollicitudin, accumsan turpis quis, maximus nunc. Pellentesque eu tempus leo. Proin vitae fermentum mauris, varius scelerisque odio. </p>
+
+	          <div class="wdw1o2">
+              <div class="boxSpace">
+                <h2>Your Details</h2>
+            	<input name="" type="text" placeholder="First name"/>
+            	<input name="" type="text" placeholder="Last name"/><br/><br/>
+            	<label><input type="checkbox" checked="checked"> Yes, please email me reminders about my trip.</label><br/><br/>
+              </div>
+              </div>
+
+             <div class="wdw1o2">
+             <div class="boxSpace">
+            	<h2>Name of your Trip Plan</h2>
+            	<input class="wdwfull" name="" type="email" placeholder="Trip Name"/>
+                <p class="tips">Ex. Symond's Winter WDW Plan</p>
+             </div>
+			 </div>
+            
+	         <hr/>
+            
+             <div class="wdw1o3">
+             <div class="boxSpace">
+	             <h3>Ages</h3>
+	             <label>#of people ages 10+ <br/><input name="" type="text" /></label><br/>
+	             <label>#of people ages 3 to 9 <br/><input name="" type="text" /></label><br/>
+	             <label>#of people ages under 3 <br/><input name="" type="text" /></label><br/>
+             </div>
+             </div>          
+
+             <div class="wdw1o3">
+             <div class="boxSpace">
+	             <h3>Budget</h3>          
+            	 <label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0" />Low budget is high priority</label><br/>
+                 <label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0" />Moderate budget</label><br/>
+            	 <label><input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0" />I want the best</label><br/>
+             </div>
+             </div>             
+
+             <div class="wdw1o3">
+             <div class="boxSpace">
+	             <h3>Interests</h3>
+                 <label><input type="checkbox" checked="checked">Princess events</label><br/>
+             	 <label><input type="checkbox" checked="checked">Meeting characters</label><br/>
+	             <label><input type="checkbox" checked="checked">Pirate attractions</label><br/>
+             </div>
+			 </div>
+            
+             <hr/>
+
+             <div class="RedButton"><a href="dates.html">Ready to Plan Dates</a></div>
+			</div>
+
+        </div>
+        </li>
+
+</ul> 
+</div>
+
+<!----------- Footer -------------------->
+
+<div class="footer">
+<div class="wrapper">
+<p class="copyright">&copy; 2015 WDWPrepSchool.com</p>
+<p>WDWPrepSchool.com is not affiliated with, authorized or endorsed by, or in any way officially connected with, The Walt Disney Company</p>
+</div>
+</div>
+<!----------- Footer END !! ----->
+</body>
+</html>

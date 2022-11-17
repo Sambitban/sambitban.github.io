@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDW Trip Planner</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<!----********************* NavBar *********************--->
+
+<div class="navbar">
+<div class="wrapper">
+
+	<div class="logo"><a href="#"><img src="img/logo.png" alt="WDW" /></a></div>
+	<div class="topSearch"><i class="fa fa-search"></i></div>
+	<div class="rightNav">
+		<ul>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Get a Quote</a></li>
+		</ul>
+	</div>
+
+	<div class="midNav">
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Podcasts</a></li>
+		<li><a href="#">Ebook</a></li>
+		</ul>
+	</div>
+
+	<div class="mobileMenu"><i class="fa fa-bars"></i></div>
+
+	<div class="clear"></div>
+
+</div>
+</div> <!---- NavBar END !! ---->
+
+
+
+<!---******************* Steps **********************--->
+
+<div class="step-yellow">
+<div class="wrapper">
+	<ul>
+		<li><a href="login.html"><span class="login loginAct">&nbsp;</span>Login</a></li>
+		<li><a href="about.html"><span class="about aboutAct">&nbsp;</span>About</a></li>
+		<li><a href="dates.html"><span class="date dateOn">&nbsp;</span>Dates</a></li>
+		<li><a href="resort.html"><span class="resort">&nbsp;</span>Resort</a></li>
+		<li><a href="dailyplan.html"><span class="dailyplan">&nbsp;</span>Daily Plan</a></li>
+		<li><a href="tickets.html"><span class="ticket">&nbsp;</span>Tickets</a></li>
+		<li><a href="dinning.html"><span class="dinning">&nbsp;</span>Dinning</a></li>
+		<li><a href="touring.html"><span class="touring">&nbsp;</span>Touring</a></li>
+		<li><a href="extras.html"><span class="extra">&nbsp;</span>Extras</a></li>
+		<li><a href="summery.html"><span class="summary">&nbsp;</span>Summery</a></li>
+		<li><a href="forum.html"><span class="forum">&nbsp;</span>Forum</a></li>
+		<div class="clear"></div>
+	</ul>
+
+</div>
+</div><!--- Steps END !! --->
+
+
+<!---******************* Dates page **********************--->
+
+<div class="CostCalc">
+<h1>Estimated trip cost so far:* <span class="totalCostCal">$0</span></h1>
+<p>*Only an estimate, doesn't include any discounts.</p>
+</div>
+
+<!--- Welcome Text with Toggle Section --->
+
+<div class="wrapper">
+	<div class="welcomeText">
+    <h1>Pick Your Dates</h1>
+    <p class="blurb">If you end up having to visit during a busy time. don't fret too much. Good planning can help you navigate even the busiest weeks. Some additional things to know about the different travel periods:</p>
+    <article>
+<input type="checkbox" id="read_more" role="button" class="read">
+<label for="read_more" onclick=""><span>Read More &nbsp;<i class="fa fa-angle-down"></i></span><span>Hide This &nbsp;<i class="fa fa-angle-up"></i></span></label>
+<section>
+
+
+<ul>
+<li>During the less busy times, Disney is more likely to dose down attractions for refurbishment.</li>
+<li>Less busy periods often have much shorter hours than busy times.</li>
+<li>Less busy times of year sometimes have temporary spikes in crowds due to special events like marathons.</li>
+<li>During the more busy times, there is more entertainment scheduled. For example, Fantasmic at Hollywood Studios may only be scheduled a couple of times a week during slower times.</li>
+</ul>
+</section>
+</article>
+
+	</div>
+</div>
+<!--- Main Page Content --->
+
+<div class="wrapper">
+<div class="pageContent">
+
+<!--- Filters --->
+	<div class="wdw1o4">
+    <div class="searchFilters">
+	<h3>Adjust the sliders and options to see which days are best for you</h3>
+    <hr/>
+
+        <p>Temperatures:</p>
+        <div class="range" id="slider"></div>
+        <div class="leftMark">Low</div>
+        <div class="midMark">20C</div>
+        <div class="rightMark">High</div>
+        <div class="clear"></div>
+        
+        <p>Crowds:</p>
+        <div class="range" id="slider1"></div>
+        <div class="leftMark">Low</div>
+        <div class="midMark">6</div>
+        <div class="rightMark">High</div>
+        <div class="clear"></div>
+        
+        <br/><br/>
+        
+        <p>Select other preferences:</p>
+        
+        <label><input name="" type="checkbox" value="" checked /> Special events scheduled</label>
+        <label><input name="" type="checkbox" value="" /> Avoid ride closures</label>
+        <label><input name="" type="checkbox" value="" /> Avoid hurricane season</label>
+        <label><input name="" type="checkbox" value="" checked /> WDW Prep fave times</label>
+        
+	</div>
+    </div>
+
+<!--- Search Result --->
+	<div class="wdw3o4">
+    <div class="searchResult">
+    
+    <h3>Select your Tour Date:</h3>
+
+    <div class="pickDate">
+    
+     	<div class="wdw1o2">
+        <div class="boxSpace">	
+        <h4>Start Date:</h4>
+        <input name="" type="text" />
+        </div>
+        </div>
+        
+        <div class="wdw1o2">
+        <div class="boxSpace">
+        <h4>End Date:</h4>
+        <input name="" type="text" />
+        </div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
+
+    <div class="dateCalendar">
+    
+    <div class="year">
+    <ul>
+    <li><a href="#"><i class="fa fa-arrow-left"></i></a></li>
+    <li>2015</li>
+    <li><a href="#"><i class="fa fa-arrow-right"></i></a></li>
+    </ul>
+    
+    </div>
+    
+    <div class="month">
+    <p>January</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td class="red">1</td><td class="red">2</td><td class="red">3</td><td class="red">4</td><td class="red">5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td class="orange">9</td><td class="orange">10</td><td class="orange">11</td><td class="orange">12</td><td class="green">13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td class="orange tripDates">18</td><td class="orange tripDates">19</td><td class="orange tripDates">20</td><td class="orange tripDates">21</td></tr>
+        <tr><td class="orange tripDates">22</td><td class="orange tripDates">23</td><td class="orange tripDates">24</td><td class="orange tripDates">25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>February</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td class="green">1</td><td class="green">2</td><td class="green">3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td class="green">8</td><td class="green">9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td class="green">15</td><td class="wdw">16</td><td class="wdw">17</td><td class="wdw">18</td><td class="wdw">19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td class="wdw">26</td><td class="wdw">27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>March</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>April</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>May</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>June</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>July</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>August</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>September</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>October</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>November</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="month">
+    <p>December</p>
+    <table>
+    	<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+        <tbody>
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td>31</td><td class="noDate">1</td><td class="noDate">2</td><td class="noDate">3</td><td class="noDate">4</td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="clear"></div>
+    </div><!--- Calendar END !!!!--->
+    
+    
+	<div class="legends">
+	<h2>WDW Prep School suggestion:</h2>
+	<ul>
+	<li class="high"><i class="fa fa-circle"></i> &nbsp; Heavy crowd</li>
+	<li class="mid"><i class="fa fa-circle"></i> &nbsp; Moderate crowd</li>
+	<li class="low"><i class="fa fa-circle"></i> &nbsp; Low crowd</li>
+	<li class="wdwfav"><i class="fa fa-circle"></i> &nbsp; WDW Favourite</li>
+    <li class="tripDateSelect"><i class="fa fa-circle"></i> &nbsp; Your trip dates</li>
+	</ul>
+	</div>
+    
+    </div>
+    </div><!--- Search Result END !!!!--->
+    
+	<div class="clear"></div>
+
+
+<hr/>
+<div class="RedButton"><a href="dates.html">Save Dates</a></div>
+
+
+</div>
+</div>
+
+
+
+
+
+<!----------- Footer -------------------->
+
+<div class="footer">
+<div class="wrapper">
+<p class="copyright">&copy; 2015 WDWPrepSchool.com</p>
+<p>WDWPrepSchool.com is not affiliated with, authorized or endorsed by, or in any way officially connected with, The Walt Disney Company</p>
+</div>
+</div>
+
+<!----------- Footer END !! ----->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+$( "#slider1" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+$( "#selectmenu2" ).selectmenu();
+$( "#selectmenu3" ).selectmenu();
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>
