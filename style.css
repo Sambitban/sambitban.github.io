@@ -1,0 +1,6 @@
+body{ background: #cccccc; margin: 0; padding: 0; font-family: 'Fragment Mono', monospace;}
+.contentBox{
+    width: 50vw;
+    height: auto;
+    margin: 10vh auto;
+}
